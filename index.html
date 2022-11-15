@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Ecomerce site</title>
+  <link rel="stylesheet" href="style-header-mobile.css">
+  <link rel="stylesheet" href="style-content-mobile.css">
+  <script src="index-test.js" defer></script>
+</head>
+<body>
+  <main>
+
+    <div class="wrapper">
+      <!--header section ************************************************************************-->
+      <header>
+        <div class="header-left">
+          <img src="images/icon-menu.svg" alt="hamburger" class="hamburger">
+          <img src="images/logo.svg" class="logo">
+        </div>
+        <div class="header-right">
+          <div class="cart-img-container" id="cart-header">
+            <img src="images/icon-cart.svg" alt="cart" class="cart-header-img">
+            <div class="cart-number-above">3</div>
+            <!--Cart *****************-->
+            <div class="cart" id="cart">
+              <div class="cart-top">
+                <span class="cart-top-text">Cart</span>
+              </div>
+              <div class="cart-empty-text">Your cart is empty.</div>   <!--Display when cart is empty-->
+              <div class="cart-down">          <!--Hide when cart is empty-->
+                <div class="cart-middle">
+                  <div class="cart-middle-left">
+                    <img src="images/image-product-1-thumbnail.jpg" class="thumbnail-cart">
+                  </div>
+                  <div class="cart-middle-middle">
+                    <p class="p-cart">Autumn Limited Edition...</p>
+                    <div>
+                      <span class="cart-price-const">$125.00 x</span>
+                      <span class="cart-times">3</span>
+                      <span class="cart-price-checkout">$375.00</span>
+                    </div>
+                  </div>
+                  <div class="cart-middle-right">
+                    <img src="images/icon-delete.svg" class="cart-bin">
+                  </div>
+                </div>
+                <div class="cart-bottom">
+                  <button class="cart-button">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--End of Cart ****************-->
+          <div class="avatar-container">
+            <img src="images/image-avatar.png" class="avatar">
+          </div>
+        </div>
+      </header>
+      <!--content section **************************************************************************-->
+      <div class="content">
+
+        <div class="lightbox">
+          <div class="previous">
+            <img src="images/icon-previous.svg" alt="previous" class="previous-img">
+          </div>
+          <div class="next">
+            <img src="images/icon-next.svg" alt="next" class="next-img">
+          </div>
+
+          <img src="images/image-product-1.jpg" class="lightbox-image" alt="image">
+        </div>
+
+        <div class="text-section">
+          <h3>SNEAKER COMPANY</h3>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion. featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+          </p>
+        </div>
+
+        <div class="prices">
+          <div class="price-current">$125.00
+            <span class="discount">50%</span>
+          </div>
+          <div class="price-old">$250.00</div>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel">
+            <img src="images/icon-minus.svg" alt="minus" class="minus">
+            <span class="carousel-qty">3 </span>
+            <img src="images/icon-plus.svg" alt="plus" class="plus">
+          </div>
+        </div>
+
+        <div class="add-to-cart-button">
+          <button class="btn"><img src="images/icon-cart-white.svg" alt="cart" class="cart-button-img">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
