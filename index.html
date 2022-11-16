@@ -17,10 +17,24 @@
   <main>
 
     <div class="wrapper">
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-close-btn">
+          <img src="images/icon-close.svg" class="menu-mobile-close-icon" id="menuMobileCloseBtn" onclick="closeMobileMenu()">
+        </div>
+        <div class="menu-mobile-content">
+          <ul class="menu-mobile-ul">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Woman</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
       <!--header section ************************************************************************-->
       <header>
         <div class="header-left">
-          <img src="images/icon-menu.svg" alt="hamburger" class="hamburger">
+          <img src="images/icon-menu.svg" alt="hamburger" class="hamburger" onclick="openMobileMenu()">
           <img src="images/logo.svg" class="logo">
         </div>
         <div class="header-right">
@@ -105,5 +119,6 @@
       </div>
     </div>
   </main>
+  <div class="overlay" id="overlay"></div>
 </body>
 </html>

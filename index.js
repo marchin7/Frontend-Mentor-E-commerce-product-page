@@ -1,6 +1,32 @@
 
-const cartHeader =document.getElementById('cart-header');
-const cart =document.getElementById('cart');
+const cartHeader = document.getElementById('cart-header');
+const cart = document.getElementById('cart');
+
+const overlay = document.getElementById('overlay');
+//const menuMobileCloseBtn = document.getElementById('menu-mobile-close-btn');
+const menuMobile = document.getElementById('menuMobile');
+
+
+function openMobileMenu(){
+  menuMobile.style.left = '0'
+  overlay.style.display = 'block'
+};
+
+function closeMobileMenu(){
+  menuMobile.style.left = '-250px'
+  overlay.style.display = 'none'
+};
+
+
+
+cartHeader.addEventListener('click', ()=>{
+  if(cart.style.bottom === '-283px') {
+    cart.style.bottom = '100px'
+  }
+  else {cart.style.bottom = '-283px'}
+})
+
+
 
 //cartHeader.addEventListener('click', ()=>{
  // if(cart.style.display === 'block') {
@@ -11,9 +37,3 @@ const cart =document.getElementById('cart');
 
 
 
-cartHeader.addEventListener('click', ()=>{
-  if(cart.style.bottom === '-283px') {
-    cart.style.bottom = '100px'
-  }
-  else {cart.style.bottom = '-283px'}
-})
